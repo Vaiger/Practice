@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<div align="center">
+		<form action="SelectTable" target="forTable" name="selectTable" method="POST">
+			<b>Виберіть таблицю</b>
+			<table width="100">
+				<tr>
+					<td align="left"><input type="radio" name="className" value="Tovar"> Товар</td>
+				</tr>
+				<tr>
+					<td align="left"><input type="radio" name="className" value="Order"> Заказ</td>
+				<tr>
+					<td align="left"><input type="radio" name="className" value="Buyer"> Покупатели</td>
+				</tr>
+			</table>
+			<input type="submit" value="Завантажити">
+			<p></p>
+		</form>
+		<form action="SelectQuery" target="forTable" name="selectQuery" method="POST">
+			<b>Вибір запиту до бази</b>
+			<select size="1" name="query">
+				<option value="order">Замовлення дешевше...
+			</select>
+			<p>
+				<input type="submit" value="Виконати запит">
+			<p>
+		</form>
+</div>
+</body>
+</html>
